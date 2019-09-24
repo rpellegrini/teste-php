@@ -3,7 +3,7 @@
 
 
 ### O Teste
-Você deve fazer o fork deste projeto e desenvolver o sistema proposto.
+Você deve fazer o fork deste projeto, desenvolver o sistema proposto e criar um pull request.
 
 ### O Sistema
 Você deve desenvolver um sistema simples para controle de contas a pagar e contas a receber.
