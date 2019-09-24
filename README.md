@@ -18,6 +18,7 @@ No sistema deve ser possível:
 - Deve ser utilizado PHP 7 (Laravel ou Codeigniter) no backend.
 - Deve ser utilizado banco de dados Mysql.
 - Devem ser feitas migrations e seeders do banco de dados.
+- Devem ser feitos testes unitários das funções (sempre que possível).
 - Devem ser utlizados Bootstrap 4 e Angular 7 como frameworks de frontend.
 
 ### O que será avaliado:
