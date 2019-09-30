@@ -15,7 +15,8 @@ class CreateLancamentosTable extends Migration
     {
         Schema::create('lancamentos', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('tipo');
+            $table->integer('tipo')->comment('1 => Despesa, 2 => Receita');
+            $table->date('data');
             $table->string('descricao');
             $table->decimal('valor', 8, 2);
             $table->boolean('status_pagamento')->default(0)
