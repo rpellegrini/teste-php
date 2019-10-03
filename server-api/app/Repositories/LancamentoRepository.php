@@ -18,6 +18,13 @@ class LancamentoRepository
 		return $this->model->orderby('data')->paginate(10);
 	}
 
+	public function getLancamentos($tipo)
+	{
+	
+		return $this->model::where('tipo', 2)->orderby('data')
+               ->get();
+	}
+
   public function findById($id)
   {
     return $this->model->find($id);

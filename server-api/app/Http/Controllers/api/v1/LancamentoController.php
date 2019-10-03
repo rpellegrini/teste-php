@@ -17,14 +17,17 @@ class LancamentoController extends Controller
 
     public function index()
     {
-        $lancamentos = $this->lancamentoRepository->findAll();
+        $tipo = 2;
+        //$lancamentos = $this->lancamentoRepository->findAll();
+        $lancamentos = $this->lancamentoRepository->getLancamentos($tipo);
         return response()->json($lancamentos);
     }
 
     public function store(Request $request)
     {
         $dadosLancamentos = array(
-          "tipo"      => $request->input('tipo'),
+        //  "tipo"      => $request->input('tipo'),
+          "tipo"      => 2,
           "data"      => $request->input('data'),
           "descricao" => $request->input('descricao'),
           "valor"     => $request->input('valor')
